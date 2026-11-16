@@ -1,0 +1,1912 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>লগে আছি | ১০০% খাঁটি অর্গানিক ফুড ও এনার্জি বুস্টার</title>
+  <meta name="description" content="স্বাস্থ্যসচেতন তরুণ ও ফিটনেসপ্রেমীদের জন্য খাঁটি সুন্দরবনের মধু, হানি-নাটস, প্রিমিয়াম খেজুর ও ড্রাই ফ্রুটস। পুরো বাংলাদেশে ফ্রি ক্যাশ অন ডেলিভারি।" />
+
+  <!-- Google Fonts: Hind Siliguri -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===================================================
+       CSS VARIABLES & GLOBAL RESET
+       =================================================== */
+    :root {
+      --primary: #1B4332;       /* Forest Green */
+      --primary-dark: #0F291E;
+      --accent: #D97706;        /* Golden Honey */
+      --accent-hover: #B45309;
+      --bg-cream: #FDFBF7;      /* Warm Organic Background */
+      --card-bg: #FFFFFF;
+      --text-main: #1F2937;
+      --text-muted: #4B5563;
+      --border-color: #E5E7EB;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.07);
+      --shadow-lg: 0 14px 34px rgba(27, 67, 50, 0.12);
+      --font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===================================================
+       STICKY NAVBAR & ANIMATED BUTTONS
+       =================================================== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(253, 251, 247, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(27, 67, 50, 0.1);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-logo img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .brand-text {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .brand-text span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    /* নেভিগেশনের অ্যানিমেটেড বাটন ডিজাইন */
+    .nav-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-weight: 600;
+      font-size: 14.5px;
+      color: var(--primary);
+      background: #FFFFFF;
+      padding: 8px 16px;
+      border-radius: 50px;
+      border: 1.5px solid rgba(27, 67, 50, 0.15);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .nav-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(217, 119, 6, 0.15), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .nav-btn:hover {
+      color: var(--accent-hover);
+      border-color: var(--accent);
+      background: #FFFDF9;
+      transform: translateY(-2.5px);
+      box-shadow: 0 6px 16px rgba(217, 119, 6, 0.18);
+    }
+
+    .nav-btn:hover::before {
+      left: 100%;
+    }
+
+    .nav-btn:active {
+      transform: translateY(0);
+    }
+
+    .nav-btn-phone {
+      background: rgba(27, 67, 50, 0.05);
+      border-color: rgba(27, 67, 50, 0.25);
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .nav-btn-phone .phone-icon {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      font-size: 14px;
+    }
+
+    .nav-btn-phone:hover {
+      background: var(--primary);
+      color: #FFFFFF !important;
+      border-color: var(--primary);
+      box-shadow: 0 6px 16px rgba(27, 67, 50, 0.25);
+    }
+
+    .nav-btn-phone:hover .phone-icon {
+      animation: phoneRing 0.5s ease infinite alternate;
+    }
+
+    @keyframes phoneRing {
+      0% { transform: rotate(0deg) scale(1); }
+      50% { transform: rotate(-15deg) scale(1.15); }
+      100% { transform: rotate(15deg) scale(1.15); }
+    }
+
+    .nav-cta {
+      background: var(--accent);
+      color: #FFFFFF !important;
+      padding: 9px 20px;
+      border-radius: var(--radius-sm);
+      font-weight: 700;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(217, 119, 6, 0.4);
+    }
+
+    /* ===================================================
+       HERO BANNER
+       =================================================== */
+    .hero {
+      padding: 60px 0 50px;
+      background: linear-gradient(180deg, #FDFBF7 0%, #F5EFE6 100%);
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(217, 119, 6, 0.12);
+      color: var(--accent-hover);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 50px;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--primary);
+      margin-bottom: 18px;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-color: rgba(217, 119, 6, 0.4);
+      text-underline-offset: 6px;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #FFFFFF;
+      padding: 13px 28px;
+      font-size: 17px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+      padding: 11px 24px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .hero-highlights {
+      display: flex;
+      gap: 18px;
+      font-size: 14px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .hero-highlights div {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-img-box {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 4px solid #FFFFFF;
+      background: #FFFFFF;
+    }
+
+    .hero-img-box img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .hero-img-box:hover img {
+      transform: scale(1.02);
+    }
+
+    /* ===================================================
+       TRUST BADGES BAR
+       =================================================== */
+    .trust-strip {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 18px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .trust-item svg {
+      flex-shrink: 0;
+    }
+
+    /* ===================================================
+       PRODUCTS SECTION
+       =================================================== */
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-title-wrap {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 46px;
+    }
+
+    .section-tag {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .section-heading {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1.3;
+    }
+
+    .section-subtext {
+      color: var(--text-muted);
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 26px;
+    }
+
+    .product-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s, box-shadow 0.25s;
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--accent);
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 50px;
+      z-index: 2;
+    }
+
+    .product-img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      background: #F8F9FA;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .product-img-wrapper img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover .product-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .product-info {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .product-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .product-weight {
+      font-size: 13px;
+      color: var(--text-muted);
+      background: #F3F4F6;
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      width: fit-content;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    /* নতুন: প্রোডাক্টের ভ্যারিয়েন্ট/ক্যাটাগরি বাটন স্টাইল */
+    .variant-selector-box {
+      margin-bottom: 12px;
+    }
+
+    .variant-label {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .variant-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .variant-btn {
+      flex: 1;
+      font-size: 13px;
+      font-family: var(--font-family);
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1.5px solid var(--border-color);
+      background: #FFFFFF;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .variant-btn:hover {
+      border-color: var(--accent);
+      color: var(--primary);
+    }
+
+    .variant-btn.active {
+      border-color: var(--accent);
+      background: rgba(217, 119, 6, 0.1);
+      color: var(--accent-hover);
+      font-weight: 700;
+      box-shadow: 0 1px 4px rgba(217, 119, 6, 0.15);
+    }
+
+    .product-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+
+    .product-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px dashed var(--border-color);
+      padding-top: 14px;
+      margin-top: auto;
+    }
+
+    .product-price {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .btn-select {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 9px 18px;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s;
+    }
+
+    .btn-select:hover {
+      background: var(--accent);
+    }
+
+    /* ===================================================
+       WHY CHOOSE US / BENEFITS
+       =================================================== */
+    .benefits-section {
+      background: #F5EFE6;
+      border-top: 1px solid rgba(27, 67, 50, 0.08);
+      border-bottom: 1px solid rgba(27, 67, 50, 0.08);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .benefit-card {
+      background: #FFFFFF;
+      padding: 24px 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--accent);
+    }
+
+    .benefit-card h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .benefit-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ===================================================
+       ORDER FORM & CHECKOUT SECTION
+       =================================================== */
+    .order-section {
+      background: #FFFFFF;
+      position: relative;
+    }
+
+    .order-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg-cream);
+      border: 2px solid rgba(27, 67, 50, 0.15);
+      border-radius: var(--radius-lg);
+      padding: 34px 28px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-label {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .form-label span {
+      color: #DC2626;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #D1D5DB;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-family);
+      font-size: 15px;
+      background: #FFFFFF;
+      color: var(--text-main);
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+    }
+
+    textarea.form-control {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    /* নতুন: মাল্টি-প্রোডাক্ট সিলেকশন লিস্ট ও কোয়ান্টিটি কন্ট্রোলার */
+    .multi-product-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .order-product-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: #FFFFFF;
+      border: 1.5px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      transition: all 0.2s ease;
+    }
+
+    .order-product-row.selected {
+      border-color: var(--accent);
+      background: #FFFDF9;
+      box-shadow: 0 2px 8px rgba(217, 119, 6, 0.12);
+    }
+
+    .prod-check-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      flex: 1;
+      user-select: none;
+    }
+
+    .prod-check-wrap input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+
+    .prod-check-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .prod-check-name {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 15px;
+    }
+
+    .prod-check-price {
+      font-size: 13px;
+      color: var(--accent-hover);
+      font-weight: 600;
+    }
+
+    .qty-control-box {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid #D1D5DB;
+      border-radius: 6px;
+      background: #F9FAFB;
+      overflow: hidden;
+    }
+
+    .qty-btn {
+      background: #F3F4F6;
+      border: none;
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--primary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.15s ease;
+    }
+
+    .qty-btn:hover:not(:disabled) {
+      background: #E5E7EB;
+      color: var(--accent);
+    }
+
+    .qty-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .qty-input {
+      width: 40px;
+      height: 32px;
+      text-align: center;
+      border: none;
+      background: #FFFFFF;
+      font-family: var(--font-family);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-main);
+      pointer-events: none;
+    }
+
+    /* Order Summary Box */
+    .order-summary-box {
+      background: #FFFFFF;
+      border: 1px dashed var(--accent);
+      border-radius: var(--radius-sm);
+      padding: 18px;
+      margin-bottom: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .summary-text {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .summary-text h5 {
+      font-size: 15px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .summary-items-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 8px 0;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .summary-items-list li {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dotted #E5E7EB;
+      padding-bottom: 2px;
+    }
+
+    .summary-delivery-tag {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .summary-total {
+      text-align: right;
+    }
+
+    .summary-total .total-label {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .summary-total .total-amount {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--accent-hover);
+    }
+
+    .payment-notice {
+      background: #FEF3C7;
+      border-left: 4px solid var(--accent);
+      padding: 14px;
+      border-radius: 4px;
+      font-size: 14px;
+      color: #92400E;
+      margin-bottom: 22px;
+      line-height: 1.5;
+    }
+
+    .payment-notice strong {
+      color: #78350F;
+    }
+
+    .form-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--accent);
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 15px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    .btn-submit:hover:not(:disabled) {
+      background: var(--accent-hover);
+    }
+
+    .btn-submit:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    .btn-whatsapp-order {
+      width: 100%;
+      background: #25D366;
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 13px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: background 0.2s;
+    }
+
+    .btn-whatsapp-order:hover {
+      background: #1EBE5D;
+    }
+
+    .status-msg {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      font-weight: 600;
+      display: none;
+      text-align: center;
+    }
+
+    .status-msg.success {
+      background: #DEF7EC;
+      color: #03543F;
+      border: 1px solid #84E1BC;
+    }
+
+    .status-msg.error {
+      background: #FDE8E8;
+      color: #9B1C1C;
+      border: 1px solid #F8B4B4;
+    }
+
+    /* ===================================================
+       FAQ & TRUST
+       =================================================== */
+    .faq-grid {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      padding: 18px 20px;
+    }
+
+    .faq-item h4 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .faq-item p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ===================================================
+       FOOTER
+       =================================================== */
+    .footer {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 50px 0 24px;
+      border-top: 4px solid var(--accent);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      font-size: 18px;
+      margin-bottom: 14px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .footer-col p {
+      color: #D1D5DB;
+      font-size: 14px;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .footer-contact a {
+      color: #FBBF24;
+      font-weight: 600;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #9CA3AF;
+    }
+
+    /* Floating WhatsApp Button */
+    .floating-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: #FFFFFF;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+      z-index: 998;
+      transition: transform 0.2s;
+    }
+
+    .floating-wa:hover {
+      transform: scale(1.1);
+    }
+
+    /* ===================================================
+       RESPONSIVE BREAKPOINTS (Mobile Optimization)
+       =================================================== */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-highlights, .hero-actions {
+        justify-content: center;
+      }
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: 30px;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .order-wrapper {
+        padding: 22px 16px;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. STICKY NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="brand-logo">
+        <a href="#" class="brand-text">লগে <span>আছি</span></a>
+      </div>
+
+      <!-- ANIMATED BUTTON NAV-LINKS -->
+      <nav class="nav-links">
+        <a href="#products" class="nav-btn">
+          <span>প্রোডাক্টস</span>
+        </a>
+        <a href="#why-us" class="nav-btn">
+          <span>কেন আমরা</span>
+        </a>
+        <a href="#faq" class="nav-btn">
+          <span>জিজ্ঞাসা</span>
+        </a>
+        <a href="tel:+8801754902492" class="nav-btn nav-btn-phone">
+          <span class="phone-icon">📞</span>
+          <span>01754902492</span>
+        </a>
+      </nav>
+
+      <a href="#order-form" class="nav-cta">
+        অর্ডার করুন 
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">🌿 ১০০% খাঁটি ও প্রাকৃতিক উপাদানের নিশ্চয়তা</div>
+        <h1 class="hero-title">প্রতিদিনের সুস্বাস্থ্য ও কর্মক্ষমতায় <span>লগে আছি</span></h1>
+        <p class="hero-subtitle">
+          কর্মজীবী তরুণ ও ফিটনেসপ্রেমীদের শারীরিক দুর্বলতা দূর করতে প্রিমিয়াম হানি-নাটস, সুন্দরবনের কাঁচা মধু ও এনার্জি ড্রাই ফ্রুটস। কোনো ভেজাল বা ক্ষতিকর প্রিজারভেটিভ নেই।
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary">
+            পণ্যসমূহ দেখুন 
+            <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 10.293a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L13.586 12H3a1 1 0 110-2h10.586l-4.293-4.293a1 1 0 011.414-1.414l6 6z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="#order-form" class="btn-outline">ক্যাশ অন ডেলিভারি অর্ডার</a>
+        </div>
+        <div class="hero-highlights">
+          <div>✓ সারা দেশে ফ্রি ডেলিভারি</div>
+          <div>✓ পণ্য দেখে মূল্য পরিশোধ</div>
+        </div>
+      </div>
+
+      <div class="hero-img-box">
+        <img 
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiQKdVrWw-pavrZIq9afGimcTP-gk-_pxLwhnkETqsRQly8N6zMX6E8949yC599oBYkYTif69FBunkJjazfxsDNN768DvLCrs3ddyySXCh-Eq2PP-KWbDLq1u2FCHCgkxMtg-PixCY-J-HKcppXljq0z3VrOS_a_hx3UtTODhMz6NwgkUNX28cz1rn12g/s320/images.jpg" 
+          alt="খাঁটি মধু ও বাদাম" 
+          loading="lazy" 
+          onerror="this.src='https://placehold.co/600x400/1B4332/FFFFFF?text=Pure+Honey+and+Nuts'"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        <span>১০০% প্রাকৃতিক গুণাগুণ</span>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>ক্যাশ অন ডেলিভারি (COD)</span>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        <span>পণ্য দেখে গ্রহণের সুযোগ</span>
+      </div>
+      <div class="trust-item">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>সারা দেশে সম্পূর্ণ ফ্রি ডেলিভারি</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. PRODUCTS SECTION -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">আমাদের প্রিমিয়াম কালেকশন</span>
+        <h2 class="section-heading">স্বাস্থ্য ও ফিটনেসের জন্য খাঁটি খাদ্যপণ্য</h2>
+        <p class="section-subtext">পছন্দের পণ্যটি নির্বাচন করুন এবং নিচের সহজ ফর্মে অর্ডার নিশ্চিত করুন।</p>
+      </div>
+
+      <div class="products-grid">
+        
+        <!-- PRODUCT 1 -->
+        <div class="product-card">
+          <span class="card-badge">🔥 টপ সেলার</span>
+          <div class="product-img-wrapper">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAyMLgkrkC82xNZkNr84Bk_Rymf9KQjbjC4Yl3YfeslsmjsW3L1ZhjpW8DKzNnLU7W0p-KY8i92wgaANVHgyyauF12-pFM_yZj2SHSQji2R_FwtFGAq40znavFNQocqT3JkDwLAHLV_1PDsLNeu-ZLfQzHfpsgClKUAJrDXuPx0NHb73wlpTZ4M7zcLqg/s320/images%20(3).jpg" 
+              alt="প্রিমিয়াম হানি-নাটস জার" 
+              loading="lazy" 
+              onerror="this.src='https://placehold.co/320x240/FDFBF7/1B4332?text=Honey+Nuts'"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">প্রিমিয়াম হানি-নাটস জার</h3>
+            <span class="product-weight">ওজন: ১ কেজি</span>
+            <p class="product-desc">খাঁটি মধুতে ভেজানো কাজু, কাঠবাদাম, আখরোট ও পাম্পকিন সিডস। দ্রুত শক্তি বৃদ্ধি ও স্ট্যামিনা বাড়াতে সেরা।</p>
+            <div class="product-footer">
+              <span class="product-price">৳৮৫০</span>
+              <button class="btn-select" onclick="selectProduct('প্রিমিয়াম হানি-নাটস জার (Honey Nuts Mix)', 850)">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 2: মধু (উইথ ভ্যারিয়েন্ট: সুন্দরবন ও লিচু ফুল) -->
+        <div class="product-card" id="honeyCard">
+          <div class="product-img-wrapper">
+            <img 
+              id="honeyImage"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiQKdVrWw-pavrZIq9afGimcTP-gk-_pxLwhnkETqsRQly8N6zMX6E8949yC599oBYkYTif69FBunkJjazfxsDNN768DvLCrs3ddyySXCh-Eq2PP-KWbDLq1u2FCHCgkxMtg-PixCY-J-HKcppXljq0z3VrOS_a_hx3UtTODhMz6NwgkUNX28cz1rn12g/s320/images.jpg" 
+              alt="খাঁটি কাঁচা মধু" 
+              loading="lazy" 
+              onerror="this.src='https://placehold.co/320x240/FDFBF7/D97706?text=Pure+Honey'"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title" id="honeyTitle">সুন্দরবনের খাঁটি কাঁচা মধু</h3>
+            <span class="product-weight">ওজন: ৫০০ গ্রাম</span>
+            
+            <!-- মধুর ক্যাটাগরি বাটন -->
+            <div class="variant-selector-box">
+              <div class="variant-label">🍯 মধুর ধরন বেছে নিন:</div>
+              <div class="variant-buttons">
+                <button type="button" class="variant-btn active" id="btnSundarban" onclick="changeHoneyVariant('sundarban')">
+                  সুন্দরবনের মধু
+                </button>
+                <button type="button" class="variant-btn" id="btnLitchi" onclick="changeHoneyVariant('litchi')">
+                  লিচু ফুলের মধু
+                </button>
+              </div>
+            </div>
+
+            <p class="product-desc" id="honeyDesc">কোনো রকম কৃত্রিম প্রসেসিং ছাড়া প্রাকৃতিক চাক থেকে সংগৃহীত কাঁচা (Raw) সুন্দরবনের মধু। রোগ প্রতিরোধ ক্ষমতা বাড়াতে সেরা।</p>
+            <div class="product-footer">
+              <span class="product-price" id="honeyPriceDisplay">৳৭৫০</span>
+              <button class="btn-select" id="honeyOrderBtn" onclick="orderSelectedHoney()">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 3 -->
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7IvlkqkYPb0tcCwLxhVI_lmMEyuQYPbKudEW8-9T9zRyfSnwFqEKkjwklFyvSgbqdvKSuxb0QjOdw0sKkhQH6wpoMttuFUF7o3ZfrAHpLjIoPu0dCEbJtWWM4cNDOEtvGMsg9ormpSlnUFJBhifXRcGbHvWjmyx3Y2U8thpHJLVzhFCo0wRcePzbcWGY/s320/images%20(6).jpg" 
+              alt="এনার্জি ড্রাই ফ্রুটস ও সিডস প্যাক" 
+              loading="lazy" 
+              onerror="this.src='https://placehold.co/320x240/FDFBF7/1B4332?text=Energy+Dry+Fruits'"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">এনার্জি ড্রাই ফ্রুটস ও সিডস প্যাক</h3>
+            <span class="product-weight">ওজন: ৫০০ গ্রাম</span>
+            <p class="product-desc">জিম-গোয়ার্সদের জন্য উপযুক্ত ড্রাই অ্যাপ্রিকট, ক্র্যানবেরি, কিশমিশ, চিয়া সিড ও সূর্যমুখী বীজের পারফেক্ট প্রোটিন কম্বিনেশন।</p>
+            <div class="product-footer">
+              <span class="product-price">৳৯৫০</span>
+              <button class="btn-select" onclick="selectProduct('এনার্জি ড্রাই ফ্রুটস ও সিডস প্যাক (Energy Mix)', 950)">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 4 -->
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjBFnJ4K-Na_2kpHFpy3bD0_2n45i7gXXawN1PHDNMmQlu58_P93BpGTiLKrBwthl5jdDl2KMekUfwDMbSB0jXGJEDJozpyVNSl5mh9I20AU95DspJ4mVyXhnMO5Wpd1aUYjxHDZ8AN0_-jY9u1IL9td5R-_Axvr0a0TYLIn8UXG4w8i3tGEhCaiVyE13g/s320/images%20(7).jpg" 
+              alt="প্রিমিয়াম মদিনার খেজুর" 
+              loading="lazy" 
+              onerror="this.src='https://placehold.co/320x240/FDFBF7/1B4332?text=Premium+Dates'"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">প্রিমিয়াম মদিনার খেজুর</h3>
+            <span class="product-weight">ওজন: ৫০০ গ্রাম</span>
+            <p class="product-desc">সরাসরি সৌদি আরবের মদিনা থেকে আমদানিকৃত নরম, রসালো ও খাঁটি পুষ্টিসমৃদ্ধ বাছাইকৃত খেজুর। ইন্সট্যান্ট এনার্জির জোগান দেয়।</p>
+            <div class="product-footer">
+              <span class="product-price">৳৬৫০</span>
+              <button class="btn-select" onclick="selectProduct('প্রিমিয়াম মদিনার খেজুর (Premium Dates)', 650)">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRODUCT 5 -->
+        <div class="product-card">
+          <div class="product-img-wrapper">
+            <img 
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8ZQxS_avif7Q-S6X59v-Xwf8K4V8aTOzrS6kRUDyHMdpmh2COf4byz2hjM7199bDGReTzaNXS5xhda4wX5tt5Y9vHfNd9xYFBNK7F1WUJ4XLlW-jlbOIe1uDBdqq4i1vSxcuT07Dst_31AyfJBHQ8ydaJSQT9h0dlWQUBy47bgzYCxQh5HEEf_fF1w1s/s320/images%20(2).jpg" 
+              alt="খাঁটি দানাদার পাটালি গুড়" 
+              loading="lazy" 
+              onerror="this.src='https://placehold.co/320x240/FDFBF7/1B4332?text=Pure+Date+Molasses'"
+            />
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">খাঁটি দানাদার পাটালি গুড়</h3>
+            <span class="product-weight">ওজন: ১ কেজি</span>
+            <p class="product-desc">চিনি বা রাসায়নিকমুক্ত খাঁটি খেজুরের রসের সুবাসিত দানাদার পাটালি গুড়। প্রাকৃতিক মিষ্টির স্বাস্থ্যসম্মত স্বাদ।</p>
+            <div class="product-footer">
+              <span class="product-price">৳৫৫০</span>
+              <button class="btn-select" onclick="selectProduct('খাঁটি দানাদার পাটালি গুড় (Pure Date Molasses)', 550)">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. BENEFITS SECTION -->
+  <section class="section benefits-section" id="why-us">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">আমাদের অঙ্গীকার</span>
+        <h2 class="section-heading">কেন "লগে আছি" আপনার প্রথম পছন্দ?</h2>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h4>🌱 শতভাগ অকৃত্রিম উপাদান</h4>
+          <p>কোনো রাসায়নিক প্রিজারভেটিভ, আর্টিফিশিয়াল ফ্লেভার বা রং মেশানো হয় না। প্রকৃতি থেকে যেভাবে আসে, সেভাবেই প্যাকেজিং করা হয়।</p>
+        </div>
+        <div class="benefit-card">
+          <h4>📦 ডেলিভারি চার্জ সম্পূর্ণ ফ্রি</h4>
+          <p>আপনি বাংলাদেশের যেকোনো জেলা বা উপজেলায় থাকুন না কেন, সম্পূর্ণ ফ্রিতে আপনার ঠিকানায় পৌঁছে দেওয়া হবে।</p>
+        </div>
+        <div class="benefit-card">
+          <h4>🛡️ দেখে নেওয়ার সুবিধা</h4>
+          <p>ডেলিভারিম্যানের সামনে পার্সেল খুলে গুণগত মান চেক করে তারপর মূল্য পরিশোধ করার পূর্ণ স্বাধীনতা পাবেন।</p>
+        </div>
+        <div class="benefit-card">
+          <h4>⚡ কর্মক্ষমতা ও ফিটনেস</h4>
+          <p>আমাদের পণ্যগুলো এমনভাবে কিউরেট করা যা সারা দিনের ক্লান্তি দূর করে প্রাকৃতিক শক্তির দীর্ঘস্থায়ী জোগান দেয়।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. ORDER FORM SECTION -->
+  <section class="section order-section" id="order-form">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">ক্যাশ অন ডেলিভারি চেকআউট</span>
+        <h2 class="section-heading">নিচের তথ্যগুলো দিয়ে অর্ডার কনফার্ম করুন</h2>
+        <p class="section-subtext">এক বা একাধিক পণ্য ও আপনার কাঙ্ক্ষিত পরিমাণ নির্বাচন করে অর্ডার নিশ্চিত করুন।</p>
+      </div>
+
+      <div class="order-wrapper">
+        <form id="checkoutForm">
+          <div class="form-grid">
+            <!-- Full Name -->
+            <div class="form-group">
+              <label class="form-label" for="custName">আপনার নাম <span>*</span></label>
+              <input type="text" id="custName" class="form-control" placeholder="যেমন: মো: আরিফুল ইসলাম" required />
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group">
+              <label class="form-label" for="custPhone">মোবাইল নম্বর <span>*</span></label>
+              <input type="tel" id="custPhone" class="form-control" placeholder="যেমন: 017XXXXXXXX" pattern="[0-9]{11}" required />
+            </div>
+
+            <!-- Customer Gmail (Optional) -->
+            <div class="form-group full">
+              <label class="form-label" for="custEmail">আপনার জিমেইল (Gmail) ঠিকানা (অপশনাল)</label>
+              <input type="email" id="custEmail" class="form-control" placeholder="যেমন: example@gmail.com (অর্ডার আপডেট পেতে চাইলে লিখুন)" />
+            </div>
+
+            <!-- Full Address -->
+            <div class="form-group full">
+              <label class="form-label" for="custAddress">সম্পূর্ণ ডেলিভারি ঠিকানা (বাসা/রোড/থানা/জেলা) <span>*</span></label>
+              <input type="text" id="custAddress" class="form-control" placeholder="যেমন: বাড়ি নং ১২, রোড নং ৩, লক্ষ্মীপুর সদর" required />
+            </div>
+
+            <!-- Multi-Product Selection List -->
+            <div class="form-group full">
+              <label class="form-label">পণ্য ও পরিমাণ নির্বাচন করুন (এক বা একাধিক সিলেক্ট করতে পারেন) <span>*</span></label>
+              
+              <div class="multi-product-list" id="multiProductList">
+
+                <!-- Item 1: হানি নাটস -->
+                <div class="order-product-row selected" id="row-prod-1">
+                  <label class="prod-check-wrap" for="check-prod-1">
+                    <input type="checkbox" id="check-prod-1" checked onchange="toggleProductSelection('prod-1')" />
+                    <div class="prod-check-info">
+                      <span class="prod-check-name">প্রিমিয়াম হানি-নাটস জার (১ কেজি)</span>
+                      <span class="prod-check-price">মূল্য: ৳৮৫০</span>
+                    </div>
+                  </label>
+                  <div class="qty-control-box">
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-1', -1)">−</button>
+                    <input type="text" class="qty-input" id="qty-prod-1" value="1" readonly />
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-1', 1)">+</button>
+                  </div>
+                </div>
+
+                <!-- Item 2: সুন্দরবনের কাঁচা মধু -->
+                <div class="order-product-row" id="row-prod-2">
+                  <label class="prod-check-wrap" for="check-prod-2">
+                    <input type="checkbox" id="check-prod-2" onchange="toggleProductSelection('prod-2')" />
+                    <div class="prod-check-info">
+                      <span class="prod-check-name">সুন্দরবনের খাঁটি কাঁচা মধু (৫০০ গ্রাম)</span>
+                      <span class="prod-check-price">মূল্য: ৳৭৫০</span>
+                    </div>
+                  </label>
+                  <div class="qty-control-box">
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-2', -1)">−</button>
+                    <input type="text" class="qty-input" id="qty-prod-2" value="1" readonly />
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-2', 1)">+</button>
+                  </div>
+                </div>
+
+                <!-- Item 3: লিচু ফুলের মধু -->
+                <div class="order-product-row" id="row-prod-3">
+                  <label class="prod-check-wrap" for="check-prod-3">
+                    <input type="checkbox" id="check-prod-3" onchange="toggleProductSelection('prod-3')" />
+                    <div class="prod-check-info">
+                      <span class="prod-check-name">খাঁটি লিচু ফুলের মধু (৫০০ গ্রাম)</span>
+                      <span class="prod-check-price">মূল্য: ৳৬৫০</span>
+                    </div>
+                  </label>
+                  <div class="qty-control-box">
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-3', -1)">−</button>
+                    <input type="text" class="qty-input" id="qty-prod-3" value="1" readonly />
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-3', 1)">+</button>
+                  </div>
+                </div>
+
+                <!-- Item 4: এনার্জি ড্রাই ফ্রুটস -->
+                <div class="order-product-row" id="row-prod-4">
+                  <label class="prod-check-wrap" for="check-prod-4">
+                    <input type="checkbox" id="check-prod-4" onchange="toggleProductSelection('prod-4')" />
+                    <div class="prod-check-info">
+                      <span class="prod-check-name">এনার্জি ড্রাই ফ্রুটস ও সিডস প্যাক (৫০০ গ্রাম)</span>
+                      <span class="prod-check-price">মূল্য: ৳৯৫০</span>
+                    </div>
+                  </label>
+                  <div class="qty-control-box">
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-4', -1)">−</button>
+                    <input type="text" class="qty-input" id="qty-prod-4" value="1" readonly />
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-4', 1)">+</button>
+                  </div>
+                </div>
+
+                <!-- Item 5: প্রিমিয়াম মদিনার খেজুর -->
+                <div class="order-product-row" id="row-prod-5">
+                  <label class="prod-check-wrap" for="check-prod-5">
+                    <input type="checkbox" id="check-prod-5" onchange="toggleProductSelection('prod-5')" />
+                    <div class="prod-check-info">
+                      <span class="prod-check-name">প্রিমিয়াম মদিনার খেজুর (৫০০ গ্রাম)</span>
+                      <span class="prod-check-price">মূল্য: ৳৬৫০</span>
+                    </div>
+                  </label>
+                  <div class="qty-control-box">
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-5', -1)">−</button>
+                    <input type="text" class="qty-input" id="qty-prod-5" value="1" readonly />
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-5', 1)">+</button>
+                  </div>
+                </div>
+
+                <!-- Item 6: খাঁটি দানাদার পাটালি গুড় -->
+                <div class="order-product-row" id="row-prod-6">
+                  <label class="prod-check-wrap" for="check-prod-6">
+                    <input type="checkbox" id="check-prod-6" onchange="toggleProductSelection('prod-6')" />
+                    <div class="prod-check-info">
+                      <span class="prod-check-name">খাঁটি দানাদার পাটালি গুড় (১ কেজি)</span>
+                      <span class="prod-check-price">মূল্য: ৳৫৫০</span>
+                    </div>
+                  </label>
+                  <div class="qty-control-box">
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-6', -1)">−</button>
+                    <input type="text" class="qty-input" id="qty-prod-6" value="1" readonly />
+                    <button type="button" class="qty-btn" onclick="adjustQty('prod-6', 1)">+</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Advance Payment Trx ID (Optional) -->
+            <div class="form-group full">
+              <label class="form-label" for="custTrx">বিকাশ / নগদ ট্রানজেকশন আইডি (অগ্রিম পেমেন্ট করলে লিখুন - অপশনাল)</label>
+              <input type="text" id="custTrx" class="form-control" placeholder="যদি বিকাশ/নগদে টাকা পাঠিয়ে থাকেন তবে TrxID এখানে দিন (নইলে খালি রাখুন)" />
+            </div>
+
+            <!-- Special Note -->
+            <div class="form-group full">
+              <label class="form-label" for="custNote">বিশেষ কোনো নির্দেশনা থাকলে লিখুন (অপশনাল)</label>
+              <textarea id="custNote" class="form-control" placeholder="যেমন: বিকেলে ডেলিভারি দিলে ভালো হয়..."></textarea>
+            </div>
+          </div>
+
+          <!-- Order Summary Card -->
+          <div class="order-summary-box">
+            <div class="summary-text">
+              <h5>অর্ডার সারসংক্ষেপ:</h5>
+              <ul class="summary-items-list" id="summaryItemsList">
+                <!-- ডাইনামিকালি আইটেম লিস্ট বসবে -->
+              </ul>
+              <div class="summary-delivery-tag">ডেলিভারি চার্জ: <span style="color: #15803D; font-weight: 700;">৳০ (সম্পূর্ণ ফ্রি)</span></div>
+            </div>
+            <div class="summary-total">
+              <div class="total-label">সর্বমোট প্রদেয় বিল:</div>
+              <div class="total-amount" id="totalAmountDisplay">৳৮৫০</div>
+            </div>
+          </div>
+
+          <!-- Payment Instructions Info -->
+          <div class="payment-notice">
+            📌 <strong>পেমেন্ট সংক্রান্ত তথ্য:</strong> আপনি পণ্য হাতে পেয়ে সম্পূর্ণ মূল্য ডেলিভারিম্যানকে দিতে পারেন। আর যদি আগেই বিকাশ বা নগদে পাঠাতে চান, তবে আমাদের পার্সোনাল নম্বর: <strong>01754902492</strong>-তে সেন্ড মানি করে ওপরের TrxID ঘরে লিখে দিন।
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="form-actions">
+            <button type="submit" id="submitBtn" class="btn-submit">
+              অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)
+            </button>
+            <button type="button" class="btn-whatsapp-order" onclick="orderViaWhatsApp()">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              হোয়াটসঅ্যাপে সরাসরি অর্ডার করুন
+            </button>
+          </div>
+
+          <div id="statusMessage" class="status-msg"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ SECTION -->
+  <section class="section" id="faq" style="background: #FDFBF7;">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">সাধারণ জিজ্ঞাসা</span>
+        <h2 class="section-heading">সচরাচর জানতে চাওয়া প্রশ্নসমূহ</h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>১. আমি কি ডেলিভারির সময় পণ্য দেখে নিতে পারব?</h4>
+          <p>হ্যাঁ, অবশ্যই। ডেলিভারিম্যান পৌঁছালে আপনি পার্সেল খুলে গুণগত মান নিশ্চিত হয়ে তারপর ক্যাশ পেমেন্ট করবেন। কোনো অমিল দেখলে সাথে সাথে ফেরত দিতে পারবেন।</p>
+        </div>
+        <div class="faq-item">
+          <h4>২. ডেলিভারি হতে কত দিন সময় লাগবে?</h4>
+          <p>অর্ডার কনফার্ম করার পর ঢাকার ভেতর ২৪-৪৮ ঘণ্টার মধ্যে এবং ঢাকার বাইরে ২-৩ দিনের মধ্যে আপনার ঠিকানায় ডেলিভারি পৌঁছে যাবে।</p>
+        </div>
+        <div class="faq-item">
+          <h4>৩. আপনাদের মধু ও খাদ্যপণ্য কি আসলেই শতভাগ খাঁটি?</h4>
+          <p>লগে আছি-র প্রতিটি উপাদান নিজস্ব তত্ত্বাবধানে কোনো ধরনের কৃত্রিম চিনি বা কেমিক্যাল ছাড়া স্বাস্থ্যসম্মতভাবে সরাসরি উৎস থেকে সংগ্রহ ও প্যাক করা হয়।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3 style="color: #FBBF24; font-size: 24px; font-weight: 700; margin-bottom: 12px;">লগে আছি (Loge Aci)</h3>
+          <p>স্বাস্থ্যকর ও দীর্ঘস্থায়ী শক্তির প্রাকৃতিক নিশ্চয়তা। কর্মজীবী তরুণ ও পরিবারের পুষ্টির বিশ্বস্ত সঙ্গী।</p>
+          <p>অফিস: E-learning and earning Ltd, Lakshmipur</p>
+        </div>
+        <div class="footer-col footer-contact">
+          <h4>সরাসরি যোগাযোগ</h4>
+          <p>📞 ফোন: <a href="tel:+8801754902492">01754902492</a></p>
+          <p>💬 WhatsApp: <a href="https://wa.me/8801754902492" target="_blank">+8801754902492</a></p>
+          <p>✉️ ইমেইল: <a href="mailto:elearning0416@gmail.com">elearning0416@gmail.com</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>পেমেন্ট ও পলিসি</h4>
+          <p>✓ ক্যাশ অন ডেলিভারি (COD)</p>
+          <p>✓ বিকাশ ও নগদ পার্সোনাল: 01754902492</p>
+          <p>✓ পুরো বাংলাদেশে ফ্রি হোম ডেলিভারি</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; ২০২৬ Loge Aci. সর্বস্বত্ব সংরক্ষিত। স্বাস্থ্য ও আস্থায় আপনার লগে আছি।
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/8801754902492?text=আমি%20Loge%20Aci%20থেকে%20অর্ডার%20সম্পর্কে%20জানতে%20চাই" class="floating-wa" target="_blank" aria-label="WhatsApp Us">
+    <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- ===================================================
+       JAVASCRIPT LOGIC & GOOGLE APPS SCRIPT SUBMISSION
+       =================================================== -->
+  <script>
+    /* =========================================================================
+       CHANGE THIS: নিচে আপনার নতুন তৈরি করা Google Apps Script Web App URL পেস্ট করুন
+       ========================================================================= */
+    const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxPBedbCZK4L5QCe3RC80yU8Vx7ITiMLRZ30uH36R81lu3YtOTX7u-LMf3wDH4kqzUS/exec";
+
+    // সকল প্রোডাক্টের ডাটা ক্যাটালগ
+    const productCatalog = {
+      "prod-1": { name: "প্রিমিয়াম হানি-নাটস জার", price: 850 },
+      "prod-2": { name: "সুন্দরবনের খাঁটি কাঁচা মধু", price: 750 },
+      "prod-3": { name: "খাঁটি লিচু ফুলের মধু", price: 650 },
+      "prod-4": { name: "এনার্জি ড্রাই ফ্রুটস ও সিডস প্যাক", price: 950 },
+      "prod-5": { name: "প্রিমিয়াম মদিনার খেজুর", price: 650 },
+      "prod-6": { name: "খাঁটি দানাদার পাটালি গুড়", price: 550 }
+    };
+
+    // মধু ভ্যারিয়েন্ট ডাটা
+    const honeyVariants = {
+      sundarban: {
+        prodId: "prod-2",
+        title: "সুন্দরবনের খাঁটি কাঁচা মধু",
+        price: 750,
+        desc: "কোনো রকম কৃত্রিম প্রসেসিং ছাড়া প্রাকৃতিক চাক থেকে সংগৃহীত কাঁচা (Raw) সুন্দরবনের মধু। রোগ প্রতিরোধ ক্ষমতা বাড়াতে সেরা।",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiQKdVrWw-pavrZIq9afGimcTP-gk-_pxLwhnkETqsRQly8N6zMX6E8949yC599oBYkYTif69FBunkJjazfxsDNN768DvLCrs3ddyySXCh-Eq2PP-KWbDLq1u2FCHCgkxMtg-PixCY-J-HKcppXljq0z3VrOS_a_hx3UtTODhMz6NwgkUNX28cz1rn12g/s320/images.jpg"
+      },
+      litchi: {
+        prodId: "prod-3",
+        title: "খাঁটি লিচু ফুলের মধু",
+        price: 650,
+        desc: "লিচু বাগানের প্রাকৃতিক ফুল থেকে সংগৃহীত হালকা সোনালী রঙের সুস্বাদু ও পুষ্টিকর লিচু ফুলের কাঁচা মধু।",
+        image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8ycw3lCyzJQdjIyYshqnMXuB_EX_6WbSdKvK_dbIF6-stlo_yL_N3moJzBWeGwnPjiH-w5myjCYAUF_5UbNMumPzXNDiArBmTN-hKpTMdLee1I6eg6diVGmNQBTpTT4AUCM19WguivvLO82p063gBh_GwtdeYrtQPWCx6FBd5CNLXlwqBQHFTg1hwxGM/s1600/images%20(8).jpg"
+      }
+    };
+
+    let activeHoneyKey = "sundarban";
+
+    // কাস্টম স্ট্যাটাস মেসেজ দেখানোর ফাংশন (alert এর পরিবর্তে)
+    function showInlineAlert(message, type = "error") {
+      const statusMsg = document.getElementById('statusMessage');
+      statusMsg.className = "status-msg " + type;
+      statusMsg.style.display = "block";
+      statusMsg.innerHTML = message;
+      statusMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // মধুর ভ্যারিয়েন্ট পরিবর্তন
+    function changeHoneyVariant(variantKey) {
+      activeHoneyKey = variantKey;
+      const data = honeyVariants[variantKey];
+
+      document.getElementById('honeyTitle').textContent = data.title;
+      document.getElementById('honeyDesc').textContent = data.desc;
+      document.getElementById('honeyPriceDisplay').textContent = "৳" + data.price;
+      document.getElementById('honeyImage').src = data.image;
+
+      if (variantKey === 'sundarban') {
+        document.getElementById('btnSundarban').classList.add('active');
+        document.getElementById('btnLitchi').classList.remove('active');
+      } else {
+        document.getElementById('btnLitchi').classList.add('active');
+        document.getElementById('btnSundarban').classList.remove('active');
+      }
+    }
+
+    // মধু কার্ড থেকে "অর্ডার করুন" চাপলে
+    function orderSelectedHoney() {
+      const selectedHoney = honeyVariants[activeHoneyKey];
+      selectSpecificProduct(selectedHoney.prodId);
+    }
+
+    // প্রোডাক্ট কার্ডের বাটন ক্লিক করলে ফর্মে সেই প্রোডাক্ট সিলেক্ট করা
+    function selectProduct(productTitle, price) {
+      let targetId = "prod-1";
+      if (productTitle.includes("হানি-নাটস")) targetId = "prod-1";
+      else if (productTitle.includes("সুন্দরবন")) targetId = "prod-2";
+      else if (productTitle.includes("লিচু")) targetId = "prod-3";
+      else if (productTitle.includes("ড্রাই ফ্রুটস")) targetId = "prod-4";
+      else if (productTitle.includes("খেজুর")) targetId = "prod-5";
+      else if (productTitle.includes("গুড়")) targetId = "prod-6";
+
+      selectSpecificProduct(targetId);
+    }
+
+    function selectSpecificProduct(prodId) {
+      const checkbox = document.getElementById('check-' + prodId);
+      if (checkbox) {
+        checkbox.checked = true;
+        const row = document.getElementById('row-' + prodId);
+        if (row) row.classList.add('selected');
+      }
+      calculateMultiOrderTotal();
+      document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // চেকবক্স টগল হ্যান্ডলার
+    function toggleProductSelection(prodId) {
+      const checkbox = document.getElementById('check-' + prodId);
+      const row = document.getElementById('row-' + prodId);
+      if (checkbox.checked) {
+        row.classList.add('selected');
+      } else {
+        row.classList.remove('selected');
+      }
+      calculateMultiOrderTotal();
+    }
+
+    // পরিমাণ (+ / -) বাড়ানো-কমানো
+    function adjustQty(prodId, delta) {
+      const qtyInput = document.getElementById('qty-' + prodId);
+      const checkbox = document.getElementById('check-' + prodId);
+      let currentVal = parseInt(qtyInput.value) || 1;
+      currentVal += delta;
+      if (currentVal < 1) currentVal = 1;
+      if (currentVal > 20) currentVal = 20;
+      qtyInput.value = currentVal;
+
+      // পরিমাণ বাড়ালে পণ্যটি অটো-সিলেক্ট হয়ে যাবে
+      if (!checkbox.checked) {
+        checkbox.checked = true;
+        document.getElementById('row-' + prodId).classList.add('selected');
+      }
+
+      calculateMultiOrderTotal();
+    }
+
+    // নির্বাচিত সকল প্রোডাক্টের বিবরণ ও সর্বমোট মূল্য হিসাব
+    function calculateMultiOrderTotal() {
+      let grandTotal = 0;
+      let totalQty = 0;
+      const selectedItems = [];
+      const summaryList = document.getElementById('summaryItemsList');
+      summaryList.innerHTML = "";
+
+      for (const [prodId, info] of Object.entries(productCatalog)) {
+        const checkbox = document.getElementById('check-' + prodId);
+        if (checkbox && checkbox.checked) {
+          const qty = parseInt(document.getElementById('qty-' + prodId).value) || 1;
+          const itemTotal = info.price * qty;
+          grandTotal += itemTotal;
+          totalQty += qty;
+
+          selectedItems.push({
+            name: info.name,
+            qty: qty,
+            price: info.price,
+            total: itemTotal
+          });
+
+          // সামারি লিস্টে যোগ করা
+          const li = document.createElement('li');
+          li.innerHTML = `<span>${info.name} × ${qty}</span> <strong>৳${itemTotal}</strong>`;
+          summaryList.appendChild(li);
+        }
+      }
+
+      if (selectedItems.length === 0) {
+        summaryList.innerHTML = `<li style="color: #DC2626;">কোনো পণ্য নির্বাচন করা হয়নি। অনুগ্রহ করে অন্তত একটি পণ্য সিলেক্ট করুন।</li>`;
+        document.getElementById('totalAmountDisplay').textContent = "৳০";
+      } else {
+        document.getElementById('totalAmountDisplay').textContent = "৳" + grandTotal;
+      }
+
+      return {
+        items: selectedItems,
+        grandTotal: grandTotal,
+        totalQty: totalQty
+      };
+    }
+
+    // WhatsApp-এ সরাসরি অর্ডার পাঠানো
+    function orderViaWhatsApp() {
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const email = document.getElementById('custEmail').value.trim();
+      const address = document.getElementById('custAddress').value.trim();
+      const trx = document.getElementById('custTrx').value.trim();
+      const orderData = calculateMultiOrderTotal();
+
+      if (!name || !phone || !address) {
+        showInlineAlert("⚠️ অনুগ্রহ করে আপনার নাম, মোবাইল নম্বর এবং সম্পূর্ণ ডেলিভারি ঠিকানা পূরণ করুন।", "error");
+        return;
+      }
+
+      if (orderData.items.length === 0) {
+        showInlineAlert("⚠️ অনুগ্রহ করে অন্তত একটি পণ্য নির্বাচন করুন।", "error");
+        return;
+      }
+
+      let itemsText = "";
+      orderData.items.forEach((item, index) => {
+        itemsText += `${index + 1}. ${item.name} (${item.qty} টি) = ৳${item.total}\n`;
+      });
+
+      let text = `*🌿 নতুন অর্ডার - Loge Aci (লগে আছি)*\n\n` +
+                 `👤 *নাম:* ${name}\n` +
+                 `📞 *মোবাইল:* ${phone}\n` +
+                 (email ? `✉️ *জিমেইল:* ${email}\n` : ``) +
+                 `📍 *ঠিকানা:* ${address}\n\n` +
+                 `🛍️ *অর্ডারকৃত পণ্যসমূহ:*\n${itemsText}\n` +
+                 `📦 *মোট আইটেম:* ${orderData.totalQty} টি\n` +
+                 `💰 *সর্বমোট বিল:* ৳${orderData.grandTotal} (ফ্রি ডেলিভারি)\n`;
+      
+      if (trx) {
+        text += `💳 *TrxID:* ${trx}\n`;
+      } else {
+        text += `💵 *পেমেন্ট:* ক্যাশ অন ডেলিভারি (COD)\n`;
+      }
+
+      const waUrl = `https://wa.me/8801754902492?text=${encodeURIComponent(text)}`;
+      window.open(waUrl, '_blank');
+    }
+
+    // গুগল শিটে ফর্ম সাবমিট হ্যান্ডলার
+    document.getElementById('checkoutForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const submitBtn = document.getElementById('submitBtn');
+      const statusMsg = document.getElementById('statusMessage');
+
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const email = document.getElementById('custEmail').value.trim();
+      const address = document.getElementById('custAddress').value.trim();
+      const trx = document.getElementById('custTrx').value.trim();
+      const note = document.getElementById('custNote').value.trim();
+      const orderData = calculateMultiOrderTotal();
+
+      if (orderData.items.length === 0) {
+        showInlineAlert("⚠️ অনুগ্রহ করে অন্তত একটি পণ্য নির্বাচন করুন।", "error");
+        return;
+      }
+
+      // পণ্যের নাম ও পরিমাণের টেক্সট স্ট্রিং তৈরি
+      const productsSummaryString = orderData.items.map(it => `${it.name} (${it.qty} টি)`).join(" + ");
+      const totalQuantity = orderData.totalQty;
+
+      // বাটন ডিজেবল ও লোডিং স্টেট
+      submitBtn.disabled = true;
+      submitBtn.textContent = "অর্ডার প্রসেসিং হচ্ছে, অপেক্ষা করুন...";
+      statusMsg.style.display = "none";
+      statusMsg.className = "status-msg";
+
+      if (GOOGLE_SCRIPT_WEB_APP_URL === "YOUR_NEW_GOOGLE_APPS_SCRIPT_WEB_APP_URL" || !GOOGLE_SCRIPT_WEB_APP_URL) {
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)";
+          statusMsg.className = "status-msg success";
+          statusMsg.style.display = "block";
+          statusMsg.innerHTML = "✅ ডেমো মোড: আপনার অর্ডারটি গ্রহণ করা হয়েছে! (নতুন Google Script URL যুক্ত করলে এটি সরাসরি শিটে সেভ হবে)";
+          document.getElementById('checkoutForm').reset();
+          document.getElementById('check-prod-1').checked = true;
+          document.getElementById('row-prod-1').classList.add('selected');
+          calculateMultiOrderTotal();
+        }, 800);
+        return;
+      }
+
+      const orderPayload = {
+        name: name,
+        phone: phone,
+        email: email || "দেওয়া হয়নি",
+        address: address,
+        product: productsSummaryString,
+        quantity: totalQuantity,
+        price: "৳" + orderData.grandTotal,
+        trxId: trx || "ক্যাশ অন ডেলিভারি (COD)",
+        note: note
+      };
+
+      try {
+        const response = await fetch(GOOGLE_SCRIPT_WEB_APP_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: JSON.stringify(orderPayload)
+        });
+
+        const result = await response.json();
+
+        if (result.status === "success") {
+          statusMsg.className = "status-msg success";
+          statusMsg.style.display = "block";
+          statusMsg.innerHTML = `🎉 ধন্যবাদ <strong>${name}</strong>! আপনার মোট <strong>৳${orderData.grandTotal}</strong> টাকার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। শীঘ্রই আমাদের প্রতিনিধি আপনার নম্বরে কল করে কনফার্ম করবেন।`;
+          document.getElementById('checkoutForm').reset();
+          // ডিফল্ট পণ্য রিস্টোর
+          document.getElementById('check-prod-1').checked = true;
+          document.getElementById('row-prod-1').classList.add('selected');
+          calculateMultiOrderTotal();
+        } else {
+          throw new Error(result.message || "ত্রুটি হয়েছে");
+        }
+      } catch (error) {
+        statusMsg.className = "status-msg error";
+        statusMsg.style.display = "block";
+        statusMsg.innerHTML = "⚠️ অর্ডার জমা নিতে সাময়িক সমস্যা হয়েছে। আপনি অনুগ্রহ করে নিচের <strong>'হোয়াটসঅ্যাপে সরাসরি অর্ডার করুন'</strong> বাটনে ক্লিক করে অর্ডারটি কনফার্ম করুন।";
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)";
+      }
+    });
+
+    // প্রাথমিক হিসাব লোড
+    calculateMultiOrderTotal();
+  </script>
+</body>
+</html>
