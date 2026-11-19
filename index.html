@@ -1607,7 +1607,7 @@
     /* =========================================================================
        CHANGE THIS: নিচে আপনার নতুন তৈরি করা Google Apps Script Web App URL পেস্ট করুন
        ========================================================================= */
-    const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxPBedbCZK4L5QCe3RC80yU8Vx7ITiMLRZ30uH36R81lu3YtOTX7u-LMf3wDH4kqzUS/exec";
+    const GOOGLE_SCRIPT_WEB_APP_URL = "https://script.google.com/macros/s/AKfycby-xyzqJm7VT_Tmjk9DEaDBWZwzKnQX7K_aRTJJzV5kqskwcZlzjai5uuh-ScUr31dq/exec";
 
     // সকল প্রোডাক্টের ডাটা ক্যাটালগ
     const productCatalog = {
@@ -1873,28 +1873,25 @@
       };
 
       try {
-        const response = await fetch(GOOGLE_SCRIPT_WEB_APP_URL, {
+        // Google Apps Script CORS-safe POST request
+        await fetch(GOOGLE_SCRIPT_WEB_APP_URL, {
           method: "POST",
+          mode: "no-cors",
           headers: {
             "Content-Type": "text/plain;charset=utf-8"
           },
           body: JSON.stringify(orderPayload)
         });
 
-        const result = await response.json();
-
-        if (result.status === "success") {
-          statusMsg.className = "status-msg success";
-          statusMsg.style.display = "block";
-          statusMsg.innerHTML = `🎉 ধন্যবাদ <strong>${name}</strong>! আপনার মোট <strong>৳${orderData.grandTotal}</strong> টাকার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। শীঘ্রই আমাদের প্রতিনিধি আপনার নম্বরে কল করে কনফার্ম করবেন।`;
-          document.getElementById('checkoutForm').reset();
-          // ডিফল্ট পণ্য রিস্টোর
-          document.getElementById('check-prod-1').checked = true;
-          document.getElementById('row-prod-1').classList.add('selected');
-          calculateMultiOrderTotal();
-        } else {
-          throw new Error(result.message || "ত্রুটি হয়েছে");
-        }
+        // no-cors মোডে রিকোয়েস্ট সফলভাবে গেলে ইউজারকে কনফার্মেশন দেখানো
+        statusMsg.className = "status-msg success";
+        statusMsg.style.display = "block";
+        statusMsg.innerHTML = `🎉 ধন্যবাদ <strong>${name}</strong>! আপনার মোট <strong>৳${orderData.grandTotal}</strong> টাকার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। শীঘ্রই আমাদের প্রতিনিধি আপনার নম্বরে কল করে কনফার্ম করবেন।`;
+        document.getElementById('checkoutForm').reset();
+        // ডিফল্ট পণ্য রিস্টোর
+        document.getElementById('check-prod-1').checked = true;
+        document.getElementById('row-prod-1').classList.add('selected');
+        calculateMultiOrderTotal();
       } catch (error) {
         statusMsg.className = "status-msg error";
         statusMsg.style.display = "block";
